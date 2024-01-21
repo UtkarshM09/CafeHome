@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Materials+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  height: 100vh;
+  background: url("flat-lay-cup-coffee-with-spoon.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  margin-right: 250px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+}
+
+.logo {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1400px;
+}
+
+.navbar a:hover {
+  color: burlywood;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  /*Important*/
+  list-style-type: none;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition-property: bg-color;
+  transition: 0.4s ease;
+}
+
+.section-1 {
+  height: 100vh;
+  width: 55rem;
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+
+}
+
+.section-1 .content {
+  color: #fff;
+}
+
+.section-1 .content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.section-1 .content p {
+  max-width: 55rem;
+  line-height: 23px;
+}
+
+.section-1 .content button {
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 38px;
+}
+
+.section-1 .content button:hover {
+  background-color: burlywood;
+  color: #fff;
+}
+
+.section-1 .content button {
+  transition-property: bg-color;
+  transition: 0.4s ease;
+}
+
+#ham-menu {
+  width: 32px;
+  height: 28px;
+  display: none;
+}
+
+#close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  height: 30px;
+  width: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  display: none;
+}
+
+@media screen and (max-width:900px) {
+
+  #ham-menu,
+  #close {
+    display: block;
+  }
+
+  .navbar .menu {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 70px 40px 0;
+    transition: left 0.20s ease;
+  }
+}
